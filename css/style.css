@@ -80,6 +80,6 @@ ul {
 }
 
 .overflow:hover .overflow-text {
-    opacity: 100%;
+    color: transparent;
 }
 
