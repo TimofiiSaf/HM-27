@@ -7,6 +7,13 @@ a:hover {
     color: orange;
 }
 
+.section {
+    display: flex;
+    gap: 0px
+    ;
+    
+}
+
 
 ul {
     list-style: none; 
@@ -32,10 +39,11 @@ ul {
 
 .overflow {
     width: 250px;
-    height: 350px;
+    height: 353px;
    
     background-color: gray;
-    
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-200px);
 }
 
 
@@ -43,6 +51,7 @@ ul {
     writing-mode: vertical-rl;
     color: white;
     bottom: 175px;
+    text-align: center;
 }
 
 .overfl-list-item {
@@ -54,12 +63,23 @@ ul {
 }
 
 .overflow-open {
-    width: 50px;
+    width: 20px;
     height: 350px;
-    background-color: gray;
     padding: 3px 0 0 0;
+    margin-left: 200px;
+
 }
 
 .overflow-div {
     overflow: hidden;
 }       
+
+.overflow:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(1px);
+}
+
+.overflow:hover .overflow-text {
+    opacity: 100%;
+}
+
