@@ -1,0 +1,65 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+ul {
+    list-style: none; 
+  }
+  
+  li {
+    position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 10px; }
+  
+  li::before {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    top: 10%; 
+    transform: translateY(-50%); 
+    width: 10px; 
+    height: 10px; 
+    background-color: orange; 
+    transform: rotate(45deg); 
+    
+  }
+
+.overflow {
+    width: 250px;
+    height: 350px;
+   
+    background-color: gray;
+    
+}
+
+
+.overflow-text {
+    writing-mode: vertical-rl;
+    color: white;
+    bottom: 175px;
+}
+
+.overfl-list-item {
+ margin-bottom: 20px;
+}
+
+.overflow-list-text:hover {
+    color: orange;
+}
+
+.overflow-open {
+    width: 50px;
+    height: 350px;
+    background-color: gray;
+    padding: 3px 0 0 0;
+}
+
+.overflow-div {
+    overflow: hidden;
+}       
